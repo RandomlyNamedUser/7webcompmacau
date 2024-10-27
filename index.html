@@ -1,1 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Skills</title>
+    <style>* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 
+button {
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #3982a9;
+    height: 10vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header p {
+    flex: 80%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-left: 1%;
+}
+
+#menu {
+    background: none;
+    border: 0;
+    color: white;
+}
+
+#info {
+    margin: 5%;
+}
+
+#info_inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 6vh);
+    width: 100%;
+    max-width: 600px;
+}
+
+.view {
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+#result {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    background-color: #ed7531;
+}
+
+#photos {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    background-color: #441262;
+    color: white;
+}
+
+#videos {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-color: #c32e67;
+    color: white;
+}
+
+#skills {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background-color: #441262;
+    color: white;
+}
+
+#events {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    background-color: #143661;
+    color: white;
+}
+
+#museum {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    background-color: #3982a9;
+}
+
+#decoration {
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#upleft {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: #9fe0d1;
+}
+
+#upright {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: #89cee8;
+}
+
+#bottom {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    background-color: #fae44c;
+}
+
+#info_description {
+    font-size: 0.6em;
+    margin-top: 5vh;
+}
+
+#info_description button {
+    display: block;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 2%;
+}
+
+#news {
+    background-color: #eeeeee;
+    padding: 5%;
+}
+
+#news_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2px;
+    font-size: 0.8em;
+}
+
+#news_grid * {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#news_grid *:hover {
+    cursor: pointer;
+}
+
+#news_photos {
+    background: linear-gradient(#441262 60%, black);
+}
+
+#news_videos {
+    background: linear-gradient(#c32e67 60%, black);
+}
+
+#news_photos div {
+    margin-top: 60%;
+    margin-left: 5px;
+    color: white;
+}
+
+#news_videos div {
+    margin-top: 60%;
+    margin-left: 5px;
+    color: white;
+}
+
+#extra_news p {
+    color: #c32e67;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-left: 3%;
+}
+
+#signup {
+    background-color: #441262;
+    background-image: url(images/newsletter.svg);
+    padding: 5%;
+}
+
+#signup h2 {
+    color: white;
+}
+</style>
+  
+</head>
+<body>
+    <header>
+        <p>WorldSkills</p>
+        <button id="menu">Menu</button>
+    </header>
+    <main>
+        <div id="info">
+            <div id="info_inner">
+                <div id="result" class="view">Result</div>
+                <div id="photos" class="view">Photos</div>
+                <div id="videos" class="view">Videos</div>
+                <div id="skills" class="view">Skills</div>
+                <div id="events" class="view">Events</div>
+                <div id="museum" class="view">Museum</div>
+                <div id="decoration">
+                    <div id="upleft"></div>
+                    <div id="upright"></div>
+                    <div id="bottom"></div>
+                </div>
+            </div>
+            <div id="info_description">
+                <p>Improving our world with the power of skills</p>
+                <p>We raise the profile and recognition of skilled people, and show how important skills are in achieving economic growth.</p>
+                <button>Find out more</button>
+            </div>
+        </div>
+        <div id="news">
+            <h3>News</h3>
+            <div id="news_grid">
+                <div><img src="images/stanley-thumb-square.jpg" alt="partnership"></div>
+                <div><img src="images/ws-shanghai-2026-square.jpg" alt="results"></div>
+                <div id="news_photos"><div>Photos</div></div>
+                <div id="news_videos"><div>Videos</div></div>
+            </div>
+            <div id="extra_news">
+                <div>
+                    <hr>
+                    <p>Making Our Mark: Elizabeth</p>
+                </div>
+                <div>
+                    <hr>
+                    <p>WorldSkills and the World Plumbing Council celebrate 20 years of partnership</p>
+                </div>
+            </div>
+        </div>
+        <div id="signup">
+            <h2>Sign up for our Newsletter</h2>
+            <input type="email" name="" id=""><br>
+            <button>Subscript</button>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </main>
+    <footer></footer>
+</body>
+</html>
